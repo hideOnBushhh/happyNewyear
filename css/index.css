@@ -1,0 +1,376 @@
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+body {
+  margin: 0;
+  -webkit-user-select: none;
+}
+body * {
+  -webkit-user-select: none;
+  font-family: helvetica;
+}
+body {
+  -webkit-text-size-adjust: 100%;
+}
+a {
+  text-decoration: none;
+}
+.main .wrap {
+  width: 20rem;
+  height: 31.5rem;
+}
+.main .wrap #page1 {
+  width: 20rem;
+  height: 31.5rem;
+  background-size: 20rem 31.5rem;
+  background-image: url(../img/bgimgMH.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.main .wrap #page1 .mainHead i {
+  display: block;
+  position: absolute;
+}
+.main .wrap #page1 .mainHead .denglongZuo {
+  width: 6.65625rem;
+  height: 11.8125rem;
+  background-size: 6.65625rem 11.8125rem;
+  background-image: url(../img/denglongZuo.png);
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+}
+.main .wrap #page1 .mainHead .denglongYou {
+  width: 6.65625rem;
+  height: 11.8125rem;
+  background-size: 6.65625rem 11.8125rem;
+  background-image: url(../img/denglongYou.png);
+  background-repeat: no-repeat;
+  right: 0;
+  top: 0;
+}
+.main .wrap #page1 .mainHead .denglongSmall1 {
+  width: 4.15625rem;
+  height: 4.8125rem;
+  background-size: 4.15625rem 4.8125rem;
+  background-image: url(../img/denglongSmall.png);
+  background-repeat: no-repeat;
+  left: 5.6875rem;
+  top: 0;
+}
+.main .wrap #page1 .mainHead .denglongSmall2 {
+  width: 4.15625rem;
+  height: 4.8125rem;
+  background-size: 4.15625rem 4.8125rem;
+  background-image: url(../img/denglongSmall.png);
+  background-repeat: no-repeat;
+  right: 5.6875rem;
+  top: 0;
+}
+.main .wrap #page1 .mainHead .dinglian {
+  width: 20rem;
+  height: 2.59375rem;
+  background-size: 20rem 2.59375rem;
+  background-image: url(../img/lianzi.png);
+  background-repeat: no-repeat;
+  right: 0rem;
+  top: 0;
+}
+.main .wrap #page1 .wordMid {
+  width: 15.625rem;
+  height: 15.625rem;
+  background-image: url(../img/wordMid.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 3rem;
+  left: 1.40625rem;
+  background-size: 15.625rem 15.625rem;
+}
+.main .wrap #page1 .bianpao {
+  width: 7.0625rem;
+  height: 8rem;
+  background-image: url(../img/bianpao.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 16.5625rem;
+  left: 7.15625rem;
+  background-size: 7.0625rem 8rem;
+}
+.main .wrap #page1 .boy {
+  width: 6.0625rem;
+  height: 10.34375rem;
+  background-image: url(../img/boy.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20.25rem;
+  left: 0.78125rem;
+  background-size: 6.0625rem 10.34375rem;
+}
+.main .wrap #page1 .girl {
+  width: 6.90625rem;
+  height: 9.5625rem;
+  background-image: url(../img/girl.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20.25rem;
+  right: 0.78125rem;
+  background-size: 6.90625rem 9.5625rem;
+}
+.main .wrap #page2 {
+  width: 20rem;
+  height: 31.5rem;
+  background-size: 20rem 31.5rem;
+  background-image: url(../img/bgimgMH.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.main .wrap #page2 .mainHead i {
+  display: block;
+  position: absolute;
+}
+.main .wrap #page2 .mainHead .denglongZuo {
+  width: 6.65625rem;
+  height: 11.8125rem;
+  background-size: 6.65625rem 11.8125rem;
+  background-image: url(../img/denglongZuo.png);
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+}
+.main .wrap #page2 .mainHead .denglongYou {
+  width: 6.65625rem;
+  height: 11.8125rem;
+  background-size: 6.65625rem 11.8125rem;
+  background-image: url(../img/denglongYou.png);
+  background-repeat: no-repeat;
+  right: 0;
+  top: 0;
+}
+.main .wrap #page2 .mainHead .denglongSmall1 {
+  width: 4.15625rem;
+  height: 4.8125rem;
+  background-size: 4.15625rem 4.8125rem;
+  background-image: url(../img/denglongSmall.png);
+  background-repeat: no-repeat;
+  left: 5.6875rem;
+  top: 0;
+}
+.main .wrap #page2 .mainHead .denglongSmall2 {
+  width: 4.15625rem;
+  height: 4.8125rem;
+  background-size: 4.15625rem 4.8125rem;
+  background-image: url(../img/denglongSmall.png);
+  background-repeat: no-repeat;
+  right: 5.6875rem;
+  top: 0;
+}
+.main .wrap #page2 .mainHead .dinglian {
+  width: 20rem;
+  height: 2.59375rem;
+  background-size: 20rem 2.59375rem;
+  background-image: url(../img/lianzi.png);
+  background-repeat: no-repeat;
+  right: 0;
+  top: 0;
+}
+.main .wrap #page2 .wordheng {
+  position: absolute;
+  width: 15.15625rem;
+  height: 8.34375rem;
+  background-size: 15.15625rem 8.34375rem;
+  background-image: url(../img/wordheng.png);
+  background-repeat: no-repeat;
+  left: 2.3125rem;
+  top: 4.5rem;
+}
+.main .wrap #page2 .dagu {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background-size: 20rem 20rem;
+  background-image: url(../img/dagu.png);
+  background-repeat: no-repeat;
+  left: 0rem;
+  top: 9.0625rem;
+}
+.main .wrap #page3 {
+  width: 20rem;
+  height: 31.5rem;
+  background-size: 20rem 31.5rem;
+  background-image: url(../img/bgimgMH.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.main .wrap #page3 .mainHead i {
+  display: block;
+  position: absolute;
+}
+.main .wrap #page3 .mainHead .denglongZuo {
+  width: 6.65625rem;
+  height: 11.8125rem;
+  background-size: 6.65625rem 11.8125rem;
+  background-image: url(../img/denglongZuo.png);
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+}
+.main .wrap #page3 .mainHead .denglongYou {
+  width: 6.65625rem;
+  height: 11.8125rem;
+  background-size: 6.65625rem 11.8125rem;
+  background-image: url(../img/denglongYou.png);
+  background-repeat: no-repeat;
+  right: 0;
+  top: 0;
+}
+.main .wrap #page3 .mainHead .denglongSmall1 {
+  width: 4.15625rem;
+  height: 4.8125rem;
+  background-size: 4.15625rem 4.8125rem;
+  background-image: url(../img/denglongSmall.png);
+  background-repeat: no-repeat;
+  left: 5.6875rem;
+  top: 0;
+}
+.main .wrap #page3 .mainHead .denglongSmall2 {
+  width: 4.15625rem;
+  height: 4.8125rem;
+  background-size: 4.15625rem 4.8125rem;
+  background-image: url(../img/denglongSmall.png);
+  background-repeat: no-repeat;
+  right: 5.6875rem;
+  top: 0;
+}
+.main .wrap #page3 .mainHead .dinglian {
+  width: 20rem;
+  height: 2.59375rem;
+  background-size: 20rem 2.59375rem;
+  background-image: url(../img/lianzi.png);
+  background-repeat: no-repeat;
+  right: 0;
+  top: 0;
+}
+.main .wrap #page3 .katongji {
+  position: absolute;
+  width: 12.99375rem;
+  height: 12.6rem;
+  background-size: 12.99375rem 12.6rem;
+  background-image: url(../img/katongji.png);
+  background-repeat: no-repeat;
+  left: 0.625rem;
+  top: 2.25rem;
+}
+.main .wrap #page3 .jiangzhuang {
+  position: absolute;
+  width: 19.59375rem;
+  height: 10.8125rem;
+  background-size: 19.59375rem 10.8125rem;
+  background-image: url(../img/jiangzhuang.png);
+  background-repeat: no-repeat;
+  left: 0.3125rem;
+  top: 10.46875rem;
+}
+.main .wrap #page3 .fudai {
+  position: absolute;
+  width: 12.5rem;
+  height: 12.5rem;
+  background-size: 12.5rem 12.5rem;
+  background-image: url(../img/fudai.png);
+  background-repeat: no-repeat;
+  left: 3.75rem;
+  top: 17.875rem;
+}
+.main .wrap #page4 {
+  width: 20rem;
+  height: 31.5rem;
+  background-size: 20rem 31.5rem;
+  background-image: url(../img/bgimgMH.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.main .wrap #page4 .mainHead i {
+  display: block;
+  position: absolute;
+}
+.main .wrap #page4 .mainHead .denglongZuo {
+  width: 6.65625rem;
+  height: 11.8125rem;
+  background-size: 6.65625rem 11.8125rem;
+  background-image: url(../img/denglongZuo.png);
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+}
+.main .wrap #page4 .mainHead .denglongYou {
+  width: 6.65625rem;
+  height: 11.8125rem;
+  background-size: 6.65625rem 11.8125rem;
+  background-image: url(../img/denglongYou.png);
+  background-repeat: no-repeat;
+  right: 0;
+  top: 0;
+}
+.main .wrap #page4 .mainHead .denglongSmall1 {
+  width: 4.15625rem;
+  height: 4.8125rem;
+  background-size: 4.15625rem 4.8125rem;
+  background-image: url(../img/denglongSmall.png);
+  background-repeat: no-repeat;
+  left: 5.6875rem;
+  top: 0;
+}
+.main .wrap #page4 .mainHead .denglongSmall2 {
+  width: 4.15625rem;
+  height: 4.8125rem;
+  background-size: 4.15625rem 4.8125rem;
+  background-image: url(../img/denglongSmall.png);
+  background-repeat: no-repeat;
+  right: 5.6875rem;
+  top: 0;
+}
+.main .wrap #page4 .mainHead .dinglian {
+  width: 20rem;
+  height: 2.59375rem;
+  background-size: 20rem 2.59375rem;
+  background-image: url(../img/lianzi.png);
+  background-repeat: no-repeat;
+  right: 0;
+  top: 0;
+}
+.main .wrap #page4 .chunfu {
+  position: absolute;
+  width: 15.1875rem;
+  height: 15.1875rem;
+  background-size: 15.1875rem 15.1875rem;
+  background-image: url(../img/chunfu.png);
+  background-repeat: no-repeat;
+  left: 2.40625rem;
+  top: 4.6875rem;
+}
+.main .wrap #page4 .jiangzhuang2 {
+  position: absolute;
+  width: 19.59375rem;
+  height: 10.8125rem;
+  background-size: 19.59375rem 10.8125rem;
+  background-image: url(../img/jiangzhuang.png);
+  background-repeat: no-repeat;
+  left: 0.3125rem;
+  top: 17.78125rem;
+}
+.main .wrap #page4 .lianggexiaoren {
+  position: absolute;
+  width: 19.4375rem;
+  height: 8.5rem;
+  background-size: 19.4375rem 8.5rem;
+  background-image: url(../img/lianggexiaoren.png);
+  background-repeat: no-repeat;
+  left: 0.28125rem;
+  top: 23.21875rem;
+}
