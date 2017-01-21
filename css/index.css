@@ -33,7 +33,8 @@ a {
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 31.75rem;
+  transform: translateY(-31.75rem);
 }
 .main .wrap #page1 .mainHead i {
   display: block;

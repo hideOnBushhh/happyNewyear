@@ -1,7 +1,7 @@
 var dis;
 var nowPoint;
 var translateY = 0;
-var startEl = 0;
+var startEl;
 // $('.wrap')
 //     .on('touchstart', function(e) {
 //         clearInterval(this.timer);
@@ -92,7 +92,7 @@ pageAnim($('#page1'));
 $('.wrap section')
     .on('touchstart', function(e) {
         startPoint = e.changedTouches[0].pageY;
-        // startEl = Number($(this)[0].style.transform.slice(11, $(this)[0].style.transform.length - 4));
+        startEl = Number($(this)[0].style.transform.slice(11, $(this)[0].style.transform.length - 4));
     }).on('touchmove', function(e) {
         nowPoint = e.changedTouches[0].pageY;
         dis = nowPoint - startPoint;
@@ -100,46 +100,42 @@ $('.wrap section')
             return
         }
         translateY = translateY <= -95.25 ? startEl + (dis * 0.05) + 92.25 : startEl + (dis * 0.05);
-        translateY =  translateY;
+        translateY = 31.75 + translateY;
         if ($(this)[0].id === 'page4') {
             $('.wrap section').css({
                 'z-index': 0,
-                "transform": 'translateY('+0 + 'rem)'
+                "top": 31.75 + 'rem'
             });
             $('#page4').css({
-                'transform':'translateY('+(-31.75) + 'rem)'
+                'top': 0
             });
             $('#page1').css({
                 'z-index': 1,
-                "transform":'translateY('+ translateY + 'rem)'
+                "top": translateY + 'rem'
             });
         } else {
+            // $('#page1').css({'z-index':0});
             $(this).css({
                 'z-index': $(this).index()
             });
             $(this).next().css({
                 'z-index': $(this).index() + 1,
-                "transform":'translateY('+ translateY + 'rem)'
+                "top": translateY + 'rem'
             });
         }
         event.preventDefault();
-        console.log($(this).next().css('borderWidth'));
     })
     .on('touchend', function(e) {
         if(dis>0){
             return
         }
+        console.log(dis);
         if (dis < -150) {
             if ($(this)[0].id === 'page4') {
                 $('#page1').animate({
-                    'borderWidth':translateY+31.75
+                    "top": 0
                 }, {
                     duration:800,
-                    step:function(now){
-                        $(this).css({
-                            "transform":'translateY('+ (translateY-now) + 'rem)'
-                        });
-                    },
                     complete: function() {
                         pageAnim($(this));
                         deleAnim($('#page4'));
@@ -147,14 +143,9 @@ $('.wrap section')
                 });
             } else {
                 $(this).next().animate({
-                'borderWidth':translateY+31.75
+                    "top": 0
                 }, {
                     duration:800,
-                    step:function(now){
-                        $(this).css({
-                            "transform":'translateY('+ (translateY-now) + 'rem)'
-                        });
-                    },
                     complete: function() {
                         pageAnim($(this));
                         deleAnim($(this).prev());
@@ -162,11 +153,11 @@ $('.wrap section')
                 });
             }
         }else{
-            $(this).css('transform',0)
+            $(this).css('top',Math.floor(translateY/31.75))
             if ($(this)[0].id === 'page4') {
-                $('#page1').css('transform','translateY('+0+'rem)')
+                $('#page1').css('top',31.75+'rem')
             } else {
-                $(this).next().css('transform','translateY('+0+'rem)')
+                $(this).next().css('top',31.75+'rem')
             }
         }
     });
