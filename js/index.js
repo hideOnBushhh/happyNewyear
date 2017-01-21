@@ -2,38 +2,7 @@ var dis;
 var nowPoint;
 var translateY = 0;
 var startEl = 0;
-// $('.wrap')
-//     .on('touchstart', function(e) {
-//         clearInterval(this.timer);
-//         startPoint = e.changedTouches[0].pageY;
-//         startEl = Number($(this)[0].style.transform.slice(11, $(this)[0].style.transform.length - 4));
-//     }).on('touchmove', function(e) {
-//         nowPoint = e.changedTouches[0].pageY;
-//         dis = nowPoint - startPoint;
-//         translateY = translateY <= -95.25 ? startEl + (dis * 0.1) + 92.25 : startEl + (dis * 0.1);
-//         $(this).css("transform", function() {
-//             return 'translateY(' + translateY + 'rem)';
-//         });
-//         $(this).css("aa", function() {
-//             return 'translateY(' + translateY + 'rem)';
-//         });
-//     })
-//     .on('touchend', function(e) {
-//         if (dis < -50) {
-//             $('.wrap').animate({
-//                 aa:31.75*(Math.ceil(translateY/31.75))-translateY%31.75
-//             }, {
-//                 step: function(now) {
-//                     // console.log(now);
-//                     $('.wrap').css("transform", function() {
-//                         return 'translateY(' + (translateY-now) + 'rem)';
-//                     })
-//                     now = 0;
-//                 },
-//                 duration: 1000
-//             })
-//         }
-//     });
+
 function deleAnim(obj){
     obj.find('.denglongZuo')
         .css('display','none')
@@ -123,7 +92,6 @@ $('.wrap section')
             });
         }
         event.preventDefault();
-        console.log($(this).next().css('borderWidth'));
     })
     .on('touchend', function(e) {
         if(dis>0){
@@ -132,14 +100,14 @@ $('.wrap section')
         if (dis < -150) {
             if ($(this)[0].id === 'page4') {
                 $('#page1').animate({
-                    'borderWidth':translateY+31.75
+                    translateY:-31.75+'rem'
                 }, {
-                    duration:800,
-                    step:function(now){
-                        $(this).css({
-                            "transform":'translateY('+ (translateY-now) + 'rem)'
-                        });
-                    },
+                        duration:800,
+                    // step:function(now){
+                    //     $(this).css({
+                    //         "transform":'translateY('+ (translateY-now) + 'rem)'
+                    //     });
+                    // },
                     complete: function() {
                         pageAnim($(this));
                         deleAnim($('#page4'));
@@ -147,14 +115,14 @@ $('.wrap section')
                 });
             } else {
                 $(this).next().animate({
-                'borderWidth':translateY+31.75
-                }, {
+                translateY:-31.75+'rem'
+            },{
                     duration:800,
-                    step:function(now){
-                        $(this).css({
-                            "transform":'translateY('+ (translateY-now) + 'rem)'
-                        });
-                    },
+                    // step:function(now){
+                    //     $(this).css({
+                    //         "transform":'translateY('+ (translateY-now) + 'rem)'
+                    //     });
+                    // },
                     complete: function() {
                         pageAnim($(this));
                         deleAnim($(this).prev());
